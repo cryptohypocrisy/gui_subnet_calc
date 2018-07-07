@@ -111,6 +111,7 @@ class Network:
         elif '192' <= self.ip[0] <= '223':
             return "C"
         elif '224' <= self.ip[0] <= '239':
+            print(type(self.ip[0]))
             return "D"
         else:
             return "E"
