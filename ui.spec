@@ -4,9 +4,9 @@ block_cipher = None
 
 
 a = Analysis(['ui.py'],
-             pathex=['C:\\Users\\dimirie\\OneDrive - montgomerycollege.edu\\Coding\\py\\PycharmProjects\\gui_subnet_calc'],
+             pathex=['c:\\Program Files (x86)\\Python36-32\\lib', 'C:\\Users\\dimirie\\OneDrive - montgomerycollege.edu\\Coding\\py\\PycharmProjects\\gui_subnet_calc'],
              binaries=[],
-             datas=[],
+             datas=[('logo2.gif', '.')],
              hiddenimports=[],
              hookspath=[],
              runtime_hooks=[],
