@@ -102,16 +102,16 @@ class Network:
 
     # use the first octet of the ip to find network class
     def get_net_class(self):
-        if '0' <= self.ip[0] <= '126':
+        first_quartet = int(self.ip[0])
+        if 0 <= first_quartet <= 126:
             return "A"
-        elif self.ip[0] == '127':
+        elif first_quartet == 127:
             return "A (loopback)"
-        elif '128' <= self.ip[0] <= '191':
+        elif 128 <= first_quartet <= 191:
             return "B"
-        elif '192' <= self.ip[0] <= '223':
+        elif 192 <= first_quartet <= 223:
             return "C"
-        elif '224' <= self.ip[0] <= '239':
-            print(type(self.ip[0]))
+        elif 224 <= first_quartet <= 239:
             return "D"
         else:
             return "E"
